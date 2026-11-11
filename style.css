@@ -93,3 +93,32 @@ footer small{font-size:10px;color:#6a5a64}
 .photo img,.icon img,.cta-box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 /* kalau mau gambar tanpa warna latar kotak, hapus tanda komentar baris di bawah */
 /* .icon{background:none!important;border:none!important} */
+
+
+/* ===== RULES JASTIP ===== */
+.rules{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.rules h2{font-size:22px;font-weight:800;letter-spacing:-.02em}
+.rules-sub{font-size:13px;line-height:1.4;color:#4a3a44;margin:-4px 0 4px}
+.rule{border:2px solid;border-radius:18px;overflow:hidden;min-width:0}
+.rule summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:14px}
+.rule summary::-webkit-details-marker{display:none}
+.rule summary:focus-visible{outline:3px solid var(--berry);outline-offset:-3px;border-radius:16px}
+.rule-ic{width:44px;height:40px;border-radius:10px;display:grid;place-items:center;font-size:20px;flex:none}
+.rule-head{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.rule-no{font-family:'Space Mono',monospace;font-size:11px;font-weight:700}
+.rule-head strong{font-size:16px;font-weight:800;color:var(--ink)}
+.chev{width:9px;height:9px;border-right:2.5px solid currentColor;border-bottom:2.5px solid currentColor;transform:rotate(45deg);margin:0 6px 3px 0;transition:transform .2s;flex:none}
+.rule[open] .chev{transform:rotate(-135deg);margin-bottom:-3px}
+.rule ul{list-style:none;margin:0 14px 14px;padding-top:10px;border-top:1.5px solid rgba(0,0,0,.08);display:flex;flex-direction:column;gap:8px}
+.rule li{position:relative;padding-left:18px;font-size:13.5px;line-height:1.45;color:#3a2a34;overflow-wrap:anywhere}
+.rule li::before{content:"";position:absolute;left:2px;top:.55em;width:7px;height:7px;border-radius:50%;background:currentColor}
+.rule li b{font-weight:800;color:var(--ink)}
+.r-pink{background:#fbeaf3;border-color:#efc3dc;color:var(--berry)}
+.r-pink .rule-ic{background:var(--pink)}
+.r-yellow{background:#fbf3ee;border-color:#f1de8f;color:#7a6a00}
+.r-yellow .rule-ic{background:var(--yellow);border:2px solid #e6c900}
+.r-lilac{background:#f3eef5;border-color:#d9c9ea;color:#6b3fa0}
+.r-lilac .rule-ic{background:#d9c3f0}
+.r-sky{background:#eef4fd;border-color:#cdd6ea;color:#2d5a8c}
+.r-sky .rule-ic{background:var(--blue)}
+@media (prefers-reduced-motion:reduce){.chev{transition:none}}
