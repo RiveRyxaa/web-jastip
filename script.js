@@ -1,5 +1,6 @@
 // ====== EDIT DATA DI SINI ======
 const WA_ADMIN = "https://wa.me/6283188315350"; // ganti nomor admin
+const TESTI_URL = "https://GANTI-LINK-TESTIMONI-DISINI"; // ganti dengan link testimoni (IG highlight / folder foto / dll)
 
 // img  = nama file gambar di folder "images" (kosongkan "" kalau mau pakai emoji)
 // icon = emoji cadangan kalau gambar tidak ditemukan
@@ -8,7 +9,8 @@ const directories = [
   { id:"02", color:"c-blue",   badge:"katalog",   img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQytuWVcOkyuOfdOt6B9jlBKOsXmTXhCi_EQi7xrcs8lIkJlz2pKfw_HEM&s=10",   icon:"📢", title:"SALURAN WA JASTIP", desc:"Katalog Harian & informasi jastip", url:"https://whatsapp.com/channel/0029Vb90QQE1iUxWKBzmR037" },
   { id:"03", color:"c-pink",   badge:"admin",  img:"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/960px-WhatsApp.svg.png?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=thumbnail",     icon:"💬", title:"ADMIN WA", desc:"Order & Konsultasi Titip", url:"https://wa.me/6283188315350" },
   { id:"04", color:"c-yellow", badge:"VIDEO", img:"https://i.pinimg.com/originals/e4/15/d6/e415d6bd27900cc066d0b8b23a7f1055.png",    icon:"🎵", title:"TIKTOK JASTIP", desc:"Haul & Unboxing Video", url:"https://www.tiktok.com/@jastipbynovilgstn?is_from_webapp=1&sender_device=pc" },
-  { id:"05", color:"c-sky",    badge:"FEEDS", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLjeAVjNCCuJYml1I4WlNOtcQQEsEb_VgnvNXq9b0jXQ&s=10", icon:"📷", title:"INSTAGRAM JASTIP", desc:"Feeds & Stories", url:"https://www.instagram.com/jastipbynovilgstn?utm_source=ig_web_button_share_sheet&mdxt=ZDNlZDc0MzIxNw==" }
+  { id:"05", color:"c-sky",    badge:"FEEDS", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLjeAVjNCCuJYml1I4WlNOtcQQEsEb_VgnvNXq9b0jXQ&s=10", icon:"📷", title:"INSTAGRAM JASTIP", desc:"Feeds & Stories", url:"https://www.instagram.com/jastipbynovilgstn?utm_source=ig_web_button_share_sheet&mdxt=ZDNlZDc0MzIxNw==" },
+  { id:"06", wide:true, color:"c-lilac", badge:"TESTI", img:"", icon:"⭐", title:"TESTIMONI JASTIP", desc:"Lihat review & bukti pesanan kakak-kakak", url:"https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDc5NDMxMTQ2Mjc3NTM3?story_media_id=3935230974044928725&cplk=MWk2YjNpM3plbWJvdw== " }
 ];
 // ================================
 
@@ -26,6 +28,15 @@ function cardHTML(d){
       ${iconHTML(d)}
       <div class="body">
         <div class="meta-top"><span class="tag">${d.tag}</span>${d.label}</div>
+        <h2>${d.title}</h2><p>${d.desc}</p>
+      </div>
+      <span class="go">${arrow}</span></a>`;
+  }
+  if (d.wide) {
+    return `<a class="dir wide ${d.color}" href="${d.url}" target="_blank" rel="noopener">
+      ${iconHTML(d)}
+      <div class="body">
+        <div class="meta-top"><span class="tag">${d.badge}</span>DIR_${d.id}</div>
         <h2>${d.title}</h2><p>${d.desc}</p>
       </div>
       <span class="go">${arrow}</span></a>`;
