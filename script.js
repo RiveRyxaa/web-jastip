@@ -10,7 +10,7 @@ const directories = [
   { id:"03", color:"c-pink",   badge:"admin",  img:"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/960px-WhatsApp.svg.png?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=thumbnail",     icon:"💬", title:"ADMIN WA", desc:"Order & Konsultasi Titip", url:"https://wa.me/6283188315350" },
   { id:"04", color:"c-yellow", badge:"VIDEO", img:"https://i.pinimg.com/originals/e4/15/d6/e415d6bd27900cc066d0b8b23a7f1055.png",    icon:"🎵", title:"TIKTOK JASTIP", desc:"Haul & Unboxing Video", url:"https://www.tiktok.com/@jastipbynovilgstn?is_from_webapp=1&sender_device=pc" },
   { id:"05", color:"c-sky",    badge:"FEEDS", img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLjeAVjNCCuJYml1I4WlNOtcQQEsEb_VgnvNXq9b0jXQ&s=10", icon:"📷", title:"INSTAGRAM JASTIP", desc:"Feeds & Stories", url:"https://www.instagram.com/jastipbynovilgstn?utm_source=ig_web_button_share_sheet&mdxt=ZDNlZDc0MzIxNw==" },
-  { id:"06", wide:true, color:"c-lilac", badge:"TESTI", img:"", icon:"⭐", title:"TESTIMONI JASTIP", desc:"Lihat review & bukti pesanan kakak-kakak", url:"https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDc5NDMxMTQ2Mjc3NTM3?story_media_id=3935230974044928725&cplk=MWk2YjNpM3plbWJvdw== " }
+  { id:"06", wide:true, color:"c-lilac", badge:"TESTI", img:"", icon:"⭐", title:"TESTIMONI JASTIP", desc:"Lihat review & bukti pesanan kakak-kakak", url:"https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDc5NDMxMTQ2Mjc3NTM3?story_media_id=3935230974044928725&rpxt=MXVlbTkyenBuMWk1Zg== " }
 ];
 // ================================
 
